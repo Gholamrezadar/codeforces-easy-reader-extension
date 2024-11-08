@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "CF easy reader",
+    "version": "0.1.0",
+    "description": "Enhances the reading expericence in Codeforces using custom bionic reading method.",
+    "permissions": [
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://codeforces.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://codeforces.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "styles.css"
+            ],
+            "matches": [
+                "*://codeforces.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "codeforceseasybionicreader@ample.vacac",
+            "strict_min_version": "58.0"
+        }
+    }
+}

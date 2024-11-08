@@ -1,0 +1,30 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    background-color: #EDE8DE !important;
+}
+
+body {
+    
+    font-family: Inter !important;
+}
+
+p {
+    font-family: Inter !important;
+    font-size: 1.75rem !important;
+
+    /* text-transform: lowercase; */
+}
+
+/* styles.css */
+.bold {
+    font-weight: bold;
+}
+
+.math, .MJXp-math{
+    color: #c61e23 !important;
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    font-family: MathJax_Main;
+}
